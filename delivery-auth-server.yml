@@ -26,6 +26,8 @@ security:
 spring:
 # Database
   datasource:
+    data: classpath:/sql/data.sql
+    schema: classpath:/sql/schema.sql
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/postgres?createDatabaseIfNotExist=true
     username: postgres
